@@ -309,6 +309,22 @@
     .download-buttons { flex-direction: column; }
     .btn-download { justify-content: center; }
   }
+
+  /* PROFILE PHOTO */
+  .hero-photo-wrap { text-align:center; margin-bottom:1.5rem; }
+  .hero-photo {
+    width:180px; height:180px;
+    border-radius:50%;
+    object-fit:cover; object-position:center top;
+    border:3px solid var(--gold);
+    box-shadow:0 8px 32px rgba(0,0,0,0.45);
+    display:inline-block;
+  }
+  @media(min-width:900px){
+    .hero-inner { display:flex; align-items:center; gap:3.5rem; }
+    .hero-photo-wrap { order:2; flex-shrink:0; margin-bottom:0; }
+    .hero-text { order:1; }
+  }
 </style>
 </head>
 <body>
@@ -318,6 +334,10 @@
     <p class="hero-eyebrow">Curriculum Vitae &nbsp;·&nbsp; Medical Devices &amp; Commercial Leadership</p>
     <h1 class="hero-name">Aristeidis<br><em>Salouros</em></h1>
     <p class="hero-title">Senior Commercial Director &amp; Key Account Manager</p>
+<div class="hero-photo-wrap">
+  <img class="hero-photo" src="photo.jpg" alt="Aristeidis Salouros" />
+</div>
+
 
     <div class="hero-stats">
       <div class="stat">
